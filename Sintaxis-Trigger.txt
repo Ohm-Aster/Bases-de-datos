@@ -1,0 +1,19 @@
+DELIMITER $$
+
+CREATE TRIGGER nombre_disp 
+
+momento_disp evento_disp ON 
+
+nombre_tabla FOR EACH ROW 
+
+sentencia_disp
+
+DELIMITER ;
+
+nombre_disp: nombre del trigger
+momento_disp: before/after
+evento_disp: insert/update/delete
+(No puede haber dos disparadores en una misma tabla que correspondan al mismo momento y sentencia)
+
+nombre_tabla
+sentencia_disp: Comando a ejecutar
